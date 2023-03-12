@@ -1,0 +1,142 @@
+a {
+    color: #FFD369;
+    text-decoration: none;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222831;
+}
+
+
+hr {
+    border-style: none;
+    border-top-style:dotted;
+    border-color: #393E46;
+    border-width: 4px;
+    width: 18%;
+
+}
+
+button {
+    border-radius: 12px;
+}
+
+
+.titulosite {
+    color: #222831;
+    font-size: xx-large;
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+.texto-descricao {
+    color: #393E46;
+    font-size: 14px;                            
+    font-family: 'Courier New', Courier, monospace;
+    padding: 12px;
+    text-align: justify;
+
+}
+
+.imagem-informacao {
+    border: 1px solid #222831;
+    border-radius: 50%;
+    height:80px;
+    margin: 0 auto;
+    width:80px;
+
+}
+
+.divcomfundotexto {
+    background-color: #FFD369;
+    border-radius: 12px;
+    border: 2px dotted;
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    word-wrap: break-word;
+
+
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.menu {
+    display: grid;
+    grid-template-areas:
+    "opcao01 opcao02 opcao03 opcao04";
+    gap: 3px;
+}
+
+.primeiraopcao {
+    background-color: #222831;
+    color: #FFD369;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    grid-area: opcao01;
+    text-align: center;
+}
+.segundaopcao {
+    background-color: #222831;
+    color: #FFD369;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    grid-area: opcao02;
+    text-align: center;
+
+}
+.terceiraopcao {
+    background-color: #222831;
+    color: #FFD369;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    grid-area: opcao03;
+    text-align: center;
+
+}
+
+.quartaopcao {
+    background-color: #222831;
+    color: #FFD369;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    grid-area: opcao04;
+    text-align: center;
+
+}
+
+
+/*
+Animacao
+*/
+
+@keyframes expand {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.92); }
+    100% { transform: scale(1);}
+}
+
+@keyframes expandColor {
+    0% { transform: scale(1); background-color: #393E46 ;}
+    50% { transform: scale(0.92); background-color: #393E46; }
+    100% { transform: scale(1); background-color: #222831;}
+}
+
+img:hover {
+    animation: expand 0.5s ease-in-out;
+}
+
+.primeiraopcao:hover, .segundaopcao:hover, .terceiraopcao:hover, .quartaopcao:hover {
+    animation-name: expandColor;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+}
