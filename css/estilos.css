@@ -16,7 +16,11 @@ hr {
 
 }
 
-
+ul {
+    color: #393E46;
+    font-size: 14px;                            
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .titulosite {
     color: #222831;
