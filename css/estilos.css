@@ -1,0 +1,80 @@
+body {
+    background-color: #EEEEEE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222831;
+}
+
+
+hr {
+    border-style: none;
+    border-top-style:dotted;
+    border-color: #393E46;
+    border-width: 4px;
+    width: 18%;
+
+}
+
+
+
+.titulosite {
+    color: #222831;
+    font-size: 25;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.texto-descricao {
+    color: #393E46;
+    font-size: 14px;                            
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 12px;
+    text-align: justify;
+
+}
+
+.imagem-informacao {
+    border: 1px solid #222831;
+    border-radius: 50%;
+    height:80px;
+    margin: 0 auto;
+    width:80px;
+
+}
+
+.divcomfundotexto {
+    background-color: #FFD369;
+    border-radius: 12px;
+    border: 2px dotted;
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    word-wrap: break-word;
+
+
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+
+/*
+Animacao
+*/
+
+@keyframes expand {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.92); }
+    100% { transform: scale(1);}
+}
+
+img:hover {
+    animation: expand 0.5s forwards;
+}
